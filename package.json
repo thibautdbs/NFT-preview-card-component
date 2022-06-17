@@ -1,7 +1,7 @@
 {
     "name": "nft-preview-card-component",
     "source": "src/index.html",
-    "script": {
+    "scripts": {
         "start": "parcel",
         "build": "parcel build"
     },
