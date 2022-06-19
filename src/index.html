@@ -24,8 +24,12 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
             .attribution {
+                padding-bottom: 5px;
+                color: var(--White);
                 font-size: 11px;
                 text-align: center;
+                position: fixed;
+                bottom: 0px;
             }
             .attribution a {
                 color: hsl(228, 45%, 44%);
@@ -33,17 +37,17 @@
         </style>
     </head>
     <body class="container">
-        <main class="nft-prevew-card-component">
-            <img src="images/image-equilibrium.jpg" alt="" class="nft-asset" />
+        <main class="nft-preview-card-component">
+            <img src="images/image-equilibrium.jpg" alt="" />
             <h1>Equilibrium #3429</h1>
             <p>Our Equilibrium collection promotes balance and calm.</p>
-            <div>
-                <p>0.041</p>
+            <div class="infos">
+                <p>0.041 ETH</p>
                 <p>3 days left</p>
             </div>
-            <div>
+            <div class="author">
                 <img src="images/image-avatar.png" alt="" />
-                <p>Creation of Jules Wyvern</p>
+                <p>Creation of <a class="name" href="#">Jules Wyvern</a></p>
             </div>
         </main>
 
