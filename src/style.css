@@ -1,17 +1,11 @@
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
+    --Cyan-see-through: hsl(178, 100%, 50%, 0.5);
     --Very-dark-blue-main: hsl(217, 54%, 11%);
     --Very-dark-blue-card: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
-}
-
-p,
-h1,
-a {
-    margin: 0px;
-    padding: 0px;
 }
 
 html {
@@ -28,6 +22,19 @@ html {
     background-color: var(--Very-dark-blue-main);
 }
 
+/* reseting styles inside component */
+
+.nft-preview-card-component p,
+.nft-preview-card-component h1,
+.nft-preview-card-component a {
+    margin: 0px;
+    padding: 0px;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* component style */
+
 .nft-preview-card-component {
     box-sizing: border-box;
     width: 350px;
@@ -42,11 +49,45 @@ html {
     font-style: normal;
 }
 
-.nft-preview-card-component > img {
+.nft-preview-card-component a {
+    cursor: pointer;
+}
+.nft-preview-card-component a:active {
+    color: var(--Cyan) !important;
+}
+
+.nft-preview-card-component > .img-overlay-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
     width: 302px;
     height: 302px;
-
     border-radius: 8px;
+}
+
+.nft-preview-card-component > .img-overlay-container > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.nft-preview-card-component > .img-overlay-container > .img-overlay {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    object-fit: none;
+    background-color: var(--Cyan-see-through);
+}
+
+.nft-preview-card-component
+    > .img-overlay-container:not(:active)
+    > .img-overlay {
+    display: none;
 }
 
 .nft-preview-card-component > h1 {
@@ -68,43 +109,43 @@ html {
     margin-bottom: 24px;
 }
 
-.infos {
+.nft-preview-card-component > .infos {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
 }
 
-.infos p {
+.nft-preview-card-component > .infos p {
     margin: 0px;
 }
 
-.infos p:first-child::before {
+.nft-preview-card-component > .infos p:first-child::before {
     content: url("images/icon-ethereum.svg");
     vertical-align: middle;
     margin-right: 6px;
 }
 
-.infos p:first-child {
+.nft-preview-card-component > .infos p:first-child {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: var(--Cyan);
 }
 
-.infos p:last-child::before {
+.nft-preview-card-component > .infos p:last-child::before {
     content: url("images/icon-clock.svg");
     vertical-align: middle;
     margin-right: 6px;
 }
 
-.infos p:last-child {
+.nft-preview-card-component > .infos p:last-child {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: var(--Soft-blue);
 }
 
-.author {
+.nft-preview-card-component > .author {
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -117,20 +158,15 @@ html {
     padding-top: 16px;
 }
 
-.author p {
-    margin: 0px;
-}
-
-.author .name {
-    color: var(--White);
-    text-decoration: none;
-}
-
-.author img {
+.nft-preview-card-component > .author img {
     width: 33px;
     height: 33px;
     border: 1px solid var(--White);
     border-radius: 50%;
 
     margin-right: 16px;
+}
+
+.nft-preview-card-component > .author .name {
+    color: var(--White);
 }
