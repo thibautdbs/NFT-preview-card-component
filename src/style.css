@@ -151,7 +151,7 @@ html {
     line-height: 20px;
 
     color: var(--Soft-blue);
-    align-items: center;
+    align-items: flex-start;
 
     border-top: 1px solid var(--Very-dark-blue-line);
     padding-top: 16px;
@@ -168,5 +168,6 @@ html {
 }
 
 .nft-preview-card-component > .author .name {
+    padding-top: 6px;
     color: var(--White);
 }
