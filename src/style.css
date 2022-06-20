@@ -175,4 +175,5 @@ html {
 
 .nft-preview-card-component > .author .name {
     color: var(--White);
+    margin-left: 5px;
 }
