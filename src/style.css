@@ -114,32 +114,34 @@ html {
     justify-content: space-between;
     height: 20px;
     margin-bottom: 24px;
-}
 
-.nft-preview-card-component > .infos p {
-    margin: 0px;
     font-size: 16px;
     line-height: 20px;
 }
 
-.nft-preview-card-component > .infos p:first-child::before {
-    content: url("images/icon-ethereum.svg");
-    vertical-align: middle;
-    margin-right: 6px;
+.nft-preview-card-component > .infos > div {
+    display: flex;
+    align-items: center;
 }
 
-.nft-preview-card-component > .infos p:first-child {
+.nft-preview-card-component > .infos > .price img {
+    width: 11px;
+    height: 18px;
+    margin-right: 6.48px;
+}
+
+.nft-preview-card-component > .infos > .price {
     font-weight: 600;
     color: var(--Cyan);
 }
 
-.nft-preview-card-component > .infos p:last-child::before {
-    content: url("images/icon-clock.svg");
-    vertical-align: middle;
-    margin-right: 6px;
+.nft-preview-card-component > .infos > .due img {
+    width: 16px;
+    height: 16px;
+    margin-right: 7.7px;
 }
 
-.nft-preview-card-component > .infos p:last-child {
+.nft-preview-card-component > .infos > .due {
     font-weight: 400;
     color: var(--Soft-blue);
 }
