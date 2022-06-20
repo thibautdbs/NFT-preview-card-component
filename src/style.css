@@ -112,6 +112,7 @@ html {
 .nft-preview-card-component > .infos {
     display: flex;
     justify-content: space-between;
+    height: 20px;
     margin-bottom: 24px;
 }
 
