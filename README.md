@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [frontendMentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/simple-card-responsive-card-component-built-with-html-and-css-H42yw_IZyc)
+-   Solution URL: [frontendMentor](https://www.frontendmentor.io/solutions/simple-card-responsive-card-component-built-with-html-and-css-H42yw_IZyc)
 -   Live Site URL: [gh-pages](https://thibautdbs.github.io/NFT-preview-card-component/)
 
 ## My process
