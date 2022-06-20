@@ -1,0 +1,35 @@
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nft-preview-card-component {
+    height: 543px;
+    width: 327px;
+    margin-top: 62px;
+  }
+
+  .nft-preview-card-component > .img-overlay-container {
+    width: 278px;
+    height: 278px;
+  }
+
+  .nft-preview-card-component > h1 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .nft-preview-card-component > p {
+    margin-bottom: 16px;
+  }
+
+  .nft-preview-card-component > .infos, .nft-preview-card-component > .author {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+/*# sourceMappingURL=index.d99cd126.css.map */
