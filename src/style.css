@@ -167,7 +167,10 @@ html {
     margin-right: 16px;
 }
 
-.nft-preview-card-component > .author .name {
+.nft-preview-card-component > .author > p {
     padding-top: 6px;
+}
+
+.nft-preview-card-component > .author .name {
     color: var(--White);
 }
