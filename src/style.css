@@ -157,6 +157,7 @@ html {
 }
 
 .nft-preview-card-component > .author img {
+    box-sizing: border-box;
     width: 33px;
     height: 33px;
     border: 1px solid var(--White);
