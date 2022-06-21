@@ -142,6 +142,8 @@ html {
 }
 
 .nft-preview-card-component > .infos > .due {
+    position: relative;
+    left: -2px;
     font-weight: 400;
     color: var(--Soft-blue);
 }
